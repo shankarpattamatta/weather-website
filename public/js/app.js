@@ -1,4 +1,4 @@
-console.log('client side javascript loaded!!')
+//console.log('client side javascript loaded!!')
 
 fetch('http://localhost:3000/weather?address=12what').then(function(response){
 
