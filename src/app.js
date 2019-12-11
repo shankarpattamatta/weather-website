@@ -6,6 +6,7 @@ const location = require('./utils.js');
 
 //when you invoke that function it gives you an object
 const app = express();
+const port=process.env.PORT || 3000;
 //This object will deliver multiple methods .one of those methods is get which is useful to route the webrequest to a paricular web page
 //Takes in the route and a function as arguments
 
@@ -119,6 +120,6 @@ app.get('*',function(req,res){
         name:'Umashankar'
     });
 });
-app.listen(3000,function(){
-    console.log('server is up on port 3000!');
+app.listen(port,function(){
+    console.log('server is up on port'+ port+'!');
 });

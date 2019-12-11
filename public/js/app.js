@@ -1,6 +1,6 @@
 //console.log('client side javascript loaded!!')
 
-fetch('http://localhost:3000/weather?address=12what').then(function(response){
+fetch('/weather?address=12what').then(function(response){
 
 response.json().then(function(error,data){
     if(error)
@@ -27,7 +27,7 @@ const locationData =search.value;
 
    messageOne.textContent='Loading Location Data for '+locationData+'...';
    console.log(locationData);
-   fetch('http://localhost:3000/weather?address='+locationData).then(function(response){
+   fetch('/weather?address='+locationData).then(function(response){
     response.json().then(function(data){
         if(data.error)
         {
